@@ -25,9 +25,9 @@ class FilmModelViewSet(viewsets.ModelViewSet):
     queryset = Film.objects.all()
     serializer_class = FilmSerializer
     filterset_fields = ["genre", "year"]
-    # search_fields = ["name"]
-    # ordering_fields = ["year", "name"]
-    # ordering = ["year"]
+    search_fields = ["name", "genre__name"]
+    ordering_fields = ["name", "year"]
+    ordering = ["year"]
 
 
 class SoundTrackModelViewSet(viewsets.ModelViewSet):
