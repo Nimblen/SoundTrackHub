@@ -1,32 +1,32 @@
 README
-Это проект, созданный с помощью Django, который представляет собой базу данных фильмов и их саундтреков.
+This is a project built with Django that is a database of movies and their soundtracks.
 
-Модели
-В проекте используются следующие модели:
+Models
+The following models are used in the project:
 
-Жанр (Genre): представляет собой жанр фильма.
-Фильм (Film): представляет собой фильм с его названием, описанием, годом выпуска и жанром.
-Фотографии фильма (FilmPhotos): представляет собой фотографии фильма.
-Саундтрек (SoundTrack): представляет собой саундтрек фильма с его названием, описанием и ссылкой на трек.
+Genre: represents the genre of the movie.
+Film: represents the movie with its title, description, year of release, and genre.
+FilmPhotos: represents the photos of the movie.
+SoundTrack: represents the soundtrack of the movie with its title, description, and track link.
 API
-В проекте реализовано API, которое позволяет выполнять CRUD-операции над моделями.
+The project has an API that allows CRUD operations on models.
 
-Установка
-Для установки проекта необходимо выполнить следующие шаги:
+Installation
+To install the project, you need to perform the following steps:
 
-Установить необходимые библиотеки: pip install -r requirements.txt
-Создать миграции: python manage.py makemigrations
-Выполнить миграции: python manage.py migrate
+Install the necessary libraries: pip install -r requirements.txt
+Create migrations: python manage.py makemigrations
+Run migrations: python manage.py migrate
 
-Запуск
-Для запуска проекта необходимо выполнить команду: python manage.py runserver
+Run
+To run the project, you need to run the command: python manage.py runserver
 
-Использование
-Для использования API необходимо отправлять запросы на следующие адреса:
+Usage
+To use the API, you need to send requests to the following addresses:
 
-GET /api/films/ - получить список всех фильмов
-GET /api/films/<id>/ - получить информацию о конкретном фильме
-POST /api/films/ - создать новый фильм
-PUT /api/films/<id>/ - обновить информацию о конкретном фильме
-DELETE /api/films/<id>/ - удалить конкретный фильм
-Аналогично можно использовать API для работы с жанрами, фотографиями фильмов и саундтреками.
+GET /api/films/ - get a list of all films
+GET /api/films/<id>/ - get information about a specific film
+POST /api/films/ - create a new film
+PUT /api/films/<id>/ - update information about a specific film
+DELETE /api/films/<id>/ - delete a specific film
+Similarly, you can use the API to work with genres, film photos, and soundtracks.
